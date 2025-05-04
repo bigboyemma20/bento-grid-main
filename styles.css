@@ -1,30 +1,113 @@
 :root{
---Purple-100: hsl(254, 88%, 90%);
---Purple-500: hsl(256, 67%, 59%);
-
---Yellow-100: hsl(31, 66%, 93%);
---Yellow-500: hsl(39, 100%, 71%);
-
---White: hsl(0, 0%, 100%);
---Black: hsl(0, 0%, 7%);
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'DM Sans', sans-serif;
+        background-color: var(--Purple-100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container{
+    /*     width:20rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-block: 2rem;
+        gap: 2rem;
+                  
+    }
+    
+img{
+    width:13rem
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    span{
+        color: Var(--Yellow-500);    
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 2rem 2rem;
+    }
+
+h2{
+    text-align:left;
+    margin-left:1rem;
+    margin-bottom:1rem;
+}
+    .card-1{
+        color: Var(--White);
+        background-color: Var(--Purple-500);  
+                     
+    }
+    
+   .stars{
+         width:13rem;
+    }
+
+     .card-1 p{
+       padding-block-end: 2rem;
+        padding-block-start: .3rem;
+        font-size: 1.2rem;
+        color: Var(--Yellow-100);
+    }
+
+    .card-2{
+        background-color: Var(--White);        
+    }
+
+    .socials{
+        width:20rem;
+        margin:1rem 0;
+        border-radius: 2rem;
+        box-shadow: 0px 2px 10px Var(--Yellow-100);
+    }
+
+    .card-3{
+        display: grid;
+        background-color: Var(--Yellow-500);
+    }       
+
+    .card-3 h2{
+        margin-top: 1rem;
+    }
+
+.calendar{
+    margin-inline-start: 1rem;
+    
 }
 
-body{
-    font-family: 'DM Sans', sans-serif;
-    background-color: var(--Purple-100);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    .card-1, .card-2,
+    .card-3, .card-4,
+    .card-5, .card-6,
+    .card-7, .card-8{
+/*         max-width: 400px; */
+         margin:0 1rem;
+         border-radius: .8rem;
+         text-align: center; 
+        
+        
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
