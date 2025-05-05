@@ -36,10 +36,6 @@
                   
     }
     
-img{
-    width:13rem
-}
-
     span{
         color: Var(--Yellow-500);    
     }
@@ -95,6 +91,7 @@ h2{
 
     .calendar{
         margin-inline-start: 1rem;
+        width:13rem
 
     }
 
@@ -113,18 +110,100 @@ h2{
         font-size: 1.1rem;
     }
 
-    .card-1, .card-2,
-    .card-3, .card-4,
-    .card-5, .card-6,
-    .card-7, .card-8{
-/*         max-width: 400px; */
-         margin:0 1rem;
-         border-radius: .8rem;
-         text-align: center; 
-        
+    .card-5{
+        background-color: Var(--Purple-500);
+        padding-block-start: 1.5rem;
+        padding-block-end: 0.5rem;
+    }
+
+    .growth-chart{
+        width:14rem;
+       padding-block-end: 2rem;
+    }
+
+    .card-5 h2{
+        color: Var(--White);
+        padding-inline: 4rem;
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 1
+    }
+
+    .card-6{
+        display: flex;
+        flex-direction: column;
+        background-color: Var(--White);
+        width: 90%;
+        }
+
+    .card-6 h2{
+        font-size: 3rem;
+        font-weight: 500;
+        text-align-last: left;
+        padding-block-start: 1rem;
+        padding-inline-start: 0.5rem;
+    }
+  
+    .card-6 p{
+        text-align: left;
+        padding-inline-start: 1.5rem;
+        color: Var(--Black);
         
     }
+
+      .avatars{
+        padding-inline-start: 1.5rem;
+        padding-block: 1.5rem;
+        width: 13rem;
+    }
+
+    .card-7{
+        display: flex;
+        flex-direction: column;
+        background-color: Var(--Yellow-100);
+        padding-block: 2rem;
+        padding-inline: 1rem;
+    }
+
+    .card-7 h2{
+            font-size: 1.8rem;        
+    }
+
+    .create-post{
+        width:12rem;
+        padding-block-start: .5rem;    
+    }
+
+    em{
+        color: var(--Purple-500);
+    }
+
+.card-8{
+    background-color: var(--Yellow-500);
+    display: flex;
+    flex-direction: column;
+    padding-block: 1.5rem;
+  }
+
+.card-8 h2{
+    padding-inline-start: 1rem;
+    font-size: 1.8rem;
+}
+
+.ai-content{
+    padding-inline-start: 2rem;
+    width: 75%;
+}
+
+   section{
+         margin:0 1rem;
+         border-radius: 0.8rem;
+         text-align: center;    
+     }
     
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { 
+        font-size: 11px;
+        text-align: center;
+}
     .attribution a { color: hsl(228, 45%, 44%); }
     
