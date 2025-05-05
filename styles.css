@@ -1,4 +1,5 @@
 :root{
+    --Purple-50: hsl(255, 86%, 95%);
     --Purple-100: hsl(254, 88%, 90%);
     --Purple-500: hsl(256, 67%, 59%);
     
@@ -17,7 +18,7 @@
     
     body{
         font-family: 'DM Sans', sans-serif;
-        background-color: var(--Purple-100);
+        background-color: var(--Purple-50);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,6 +54,7 @@ h2{
     text-align:left;
     margin-left:1rem;
     margin-bottom:1rem;
+    color:Var(--Black);
 }
     .card-1{
         color: Var(--White);
@@ -91,10 +93,25 @@ h2{
         margin-top: 1rem;
     }
 
-.calendar{
-    margin-inline-start: 1rem;
-    
-}
+    .calendar{
+        margin-inline-start: 1rem;
+
+    }
+
+    .card-4{
+        background-color: Var(--Purple-100);
+        padding-block: 2rem;
+    }
+
+    .schedule{
+        width:19rem;
+        padding: 1rem 0;
+    }
+
+    .card-4 p{
+        padding-inline: 1.9rem;
+        font-size: 1.1rem;
+    }
 
     .card-1, .card-2,
     .card-3, .card-4,
