@@ -26,7 +26,7 @@
     }
     
     .container{
-    /*     width:20rem; */
+    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,6 +60,7 @@
    
    .stars{
          width:60%;
+         max-width: 16rem
     }
 
      .card-1 p{
@@ -83,10 +84,13 @@
     .card-3{
         display: grid;
         background-color: var(--Yellow-500);
+        padding-block-end: 0;
     }       
 
     .card-3 h2{
         margin-top: 1rem;
+       padding-inline-end: 2rem;
+        
     }
 
     .calendar{
@@ -123,7 +127,7 @@
 
     .card-5 h2{
         color: var(--White);
-        padding-inline: 4rem;
+        padding-inline: 2rem;
         text-align: center;
         font-size: 1.7rem;
 
@@ -207,3 +211,84 @@
 }
     .attribution a { color: hsl(228, 45%, 44%); }
     
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .card-6 h2 {
+        font-size: 2rem;
+    }
+
+    .avatars, .growth-chart, .calendar, .stars {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .card-6 h2 {
+        font-size: 2.5rem;
+    }
+
+    .avatars, .growth-chart, .calendar, .stars {
+        width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .container{
+        display: grid;
+        place-content: center;
+        align-items: center;
+        grid-gap:.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .card-1 {
+        grid-column:2/4;
+        grid-row: 1;
+    }
+    
+    .card-2{
+        grid-column:2;
+        grid-row:2;
+    }
+    
+    .card-3{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+    .card-4{
+        grid-column: 4;
+        grid-row: 2/1;
+    }
+    
+    .card-5{
+        grid-column: 3 / span 2;
+        grid-row: 3;
+    }
+   
+    .card-6{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .card-7{
+        grid-column: 1;
+        grid-row:1 / span 1;
+        padding-block-start: 3rem;
+        padding-block-end: 5rem
+    }
+    
+    .card-8{
+        grid-column: 1;
+        grid-row:2 ;
+    }
+}
